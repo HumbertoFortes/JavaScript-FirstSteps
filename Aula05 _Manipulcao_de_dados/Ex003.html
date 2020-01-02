@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        body {
+            background: #5757c0;
+            color: aliceblue;
+            font: 21pt;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        h1 {
+            font-size: 10rem;
+        }
+    </style>
+</head>
+
+
+
+<body>
+    <h1>Olá, Mundo!</h1>
+
+    <script>
+        var n1 = Number(window.prompt('Digite um número: ')) //receve String, tem que se fazer a conversão
+        var n2 = Number(window.prompt('Digite outro número: ')) //Pode escrever-se sem o Window, Funciona com qualquer tipo 
+        var soma = n1 + n2;
+        alert('A soma dos dois números é ' + soma)
+
+        //Fazendo a concatenação com Template String
+        //Para isso envez das apas simples ou duplas utlizaremos a Crase ``
+        alert(`A soma entre ${n1} e ${n2} é igual a ${soma}`)
+
+        //Trabalhando com String
+        var nome = 'Humberto'
+        alert('Meu nome é ' + String(nome)) // ou nome.ToString
+
+        //Miuscula
+        nome.toUpperCase()
+            //Minuscula
+        nome.toLowerCase()
+            //tamanho
+        nome.length
+    </script>
+</body>
+
+</html>
